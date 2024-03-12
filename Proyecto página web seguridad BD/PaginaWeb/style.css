@@ -1,0 +1,349 @@
+/* Fuente importada */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+body {
+    font-family: Aclonica;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-bottom: 15%;
+    min-height: 100vh;
+    
+}
+
+.Opciones {
+    display: flex; /* Deja los div de forma horizontal*/
+    justify-content: center; 
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
+.Menu {
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+    padding: 20px 30px 12px;
+    text-align: center;
+    flex-basis: calc(25% - 80px); /* Ancho igual para todos */
+}
+
+
+.Menu img {
+    max-width: 100%;
+    height: 150px; /* Ajustar el alto de las imágenes */
+    object-fit: cover; /* Ajustar la imagen para que llene el contenedor */
+    margin-top: 12px;
+    margin-bottom: 12px;
+    
+    
+}
+
+.Menu h6 {
+    font-family: 'Black Ops One';
+    height: 60px;
+    font-size: 1.25rem;
+    margin: 23px 0 0 12px;
+    color: #0f529e;
+}
+
+.Menu a {
+    background-color: #000000;
+    font-family: 'Black Ops One';
+    text-decoration: none;
+    font-weight: bold;
+    color: #fdfdfd;
+    font-weight: 700;
+    margin-top: 12px;
+    display: block; 
+    padding: 8px 36px 9px 35px;
+}
+
+.Menu a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.header {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to right, rgb(155, 155, 155), rgb(37, 37, 37),black); /* Fondo degradado */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-family: 'Black Ops One';
+    font-size: 30px; /* Cambia el tamaño de la letra */
+    color: #ffffff; /* Cambia el color del texto */
+    
+}
+
+.Titulo h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px; /* Cambia el tamaño de la letra */
+    color: #0f529e; /* Cambia el color del texto */
+    font-family: 'Black Ops One';
+
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav-list a {
+    font-family: 'Black Ops One';
+    padding: 2px 15px 2px 15px; 
+    text-decoration: none; /* Elimina el subrayado */
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+
+.nav-list a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.Contenido {
+    background-color:  #ffffff; 
+    margin: 0;
+}
+
+.infoTablas {  
+    max-width: 90%;  
+    text-align: center;
+    margin: 20px auto;
+    background: linear-gradient(to right, rgb(155, 155, 155), rgb(37, 37, 37),black); /* Fondo degradado */
+    color: #ffffff;
+    font-family: 'Black Ops One';
+    font-size: 20px;
+    
+}
+
+.infoTablas h3 {
+    margin: 5px 40px; /* Margen lateral para separar los elementos h3 */
+    color:#ffffff;
+
+}
+
+.usuario{
+    max-width: 90%;  
+    text-align: left;
+    margin: 20px auto;
+    font-family: 'Black Ops One';
+    font-size: 22px;
+    color:#0f529e;
+    
+}
+
+.usuario1{
+    text-align: left;
+    margin: 20px auto;
+    font-family: 'Black Ops One';
+    font-size: 22px;
+    color:#0f529e;
+    
+}
+
+
+#nombreTabla {
+    width: 300px; /* Ancho deseado */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin: -10px auto;
+    margin-left: 20px ;
+   
+}
+
+#nombreColumna {
+    width: 300px; /* Ancho deseado */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin-left: 20px ;
+   
+}
+
+#opcionesFC {
+    width: 400px; /* Ancho deseado */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin-left: 20px ;
+   
+}
+
+#cambioUsuario{
+    width: 300px; /* Ancho deseado */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin-left: 20px ;
+
+}
+
+
+.LabelNombreTabla{
+    font-family: 'Black Ops One';
+    font-weight: bold; /* Agrega negrita */
+    font-size: 22px; /* Tamaño de fuente más grande */
+    margin-left: 66px ;
+    color:#0f529e;
+    
+
+}
+
+.LabelNombreColumna {
+    font-family: 'Black Ops One';
+    font-weight: bold; /* Agrega negrita */
+    font-size: 22px; /* Tamaño de fuente más grande */
+    margin-left: 66px ;
+    color:#0f529e;
+
+}
+
+.ProteccionFC{
+    font-family: 'Black Ops One';
+    font-weight: bold; /* Agrega negrita */
+    font-size: 22px; /* Tamaño de fuente más grande */
+    margin-left: 66px ;
+    color:#0f529e;
+}
+
+.LabelcambioUsuario{
+    font-family: 'Black Ops One';
+    font-weight: bold; /* Agrega negrita */
+    font-size: 22px; /* Tamaño de fuente más grande */
+    margin-left: 66px ;
+    color:#0f529e;
+
+}
+
+h3{
+    margin-left: 30px ; 
+}
+
+/* Estilos para la tabla */
+
+
+.tablasProcedimientos{
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(97, 97, 97);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial; 
+}
+
+
+.contenedorTablas {
+    max-width: 90%; /* Ancho máximo igual al ancho de la ventana */
+    overflow-x: auto; /* Mostrar scroll horizontal si es necesario */
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+
+
+th, td {
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+}
+
+th {
+    background-color: #000000;
+    font-weight: bold;
+    color: #0effdf;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(97, 97, 97);
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+tr:hover {
+    background-color: #0effdf;
+    color: #0a0a0a;
+}
+
+.botones-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 12.9%;
+    margin-right: 12.9%;
+}
+
+.enmascararBtn {
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #000000;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cifrarBtn {
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #000000;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.enmascararBtn:hover {
+    background-color: #fa0101;
+}
+
+.cifrarBtn:hover {
+    background-color: #fa0101;
+}
+
+footer {
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(to right, rgb(155, 155, 155), rgb(37, 37, 37),black); /* Fondo degradado */
+    padding: 10px 0;
+    font-family: 'Black Ops One';
+    font-size: 20px; /* Cambia el tamaño de la letra */
+    color: #ffffff; /* Cambia el color del texto */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/* Responsividad para la tabla en dispositivos móviles */
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px 12px;
+    }
+}

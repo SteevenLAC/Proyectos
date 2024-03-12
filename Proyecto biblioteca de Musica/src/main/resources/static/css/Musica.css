@@ -1,0 +1,31 @@
+.vj-destacados .card {
+    height: 100%;
+    
+}
+
+.vj-destacados .card img{
+    height: 250px;
+    object-fit: cover;
+}
+
+.vj-destacados .card-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.vj-destacados .card-title {
+    height: 60px;
+    margin-bottom: 10px;
+   
+}
+
+.vj-destacados .card-textA {
+    height: 50px;
+    margin-bottom: 10px;
+   
+}
+
+.vj-destacados .card-text {
+    height: 70px;
+   
+}

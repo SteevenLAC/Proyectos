@@ -1,0 +1,29 @@
+USE [master]
+
+GO
+
+CREATE SERVER AUDIT [AUDIT_PRACTICA]
+TO FILE 
+(	FILEPATH = N'C:\AUDITORIAS SQL'
+	,MAXSIZE = 0 MB
+	,MAX_ROLLOVER_FILES = 2147483647
+	,RESERVE_DISK_SPACE = OFF
+) WITH (QUEUE_DELAY = 1000, ON_FAILURE = CONTINUE)
+
+GO
+
+
+USE [Practica]
+
+GO
+
+CREATE DATABASE AUDIT SPECIFICATION [DatabaseAuditSpecification_PRACTICA]
+FOR SERVER AUDIT [AUDIT_PRACTICA]
+ADD (SELECT ON OBJECT::[dbo].[Usuario] BY [public]),
+ADD (UPDATE ON OBJECT::[dbo].[Usuario] BY [public]),
+ADD (DELETE ON OBJECT::[dbo].[Usuario] BY [public]),
+ADD (SELECT ON OBJECT::[dbo].[ventas] BY [public]),
+ADD (UPDATE ON OBJECT::[dbo].[ventas] BY [public]),
+ADD (DELETE ON OBJECT::[dbo].[ventas] BY [public])
+
+GO

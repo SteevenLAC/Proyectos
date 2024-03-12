@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biblioteca de Música</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/Musica.css" >
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark align-items-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" th:href="@{/}">
+                    <img src="img/music.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Biblioteca de Música</a>
+          
+                <form th:action="@{/Buscar}" class="d-flex" role="search">
+                    <input autofocus="autofocus" name="consulta" class="form-control me-2" type="search" th:placeholder="${param.consulta}" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                </form>
+            </div>
+
+        </nav>
+        
+        <div class="container mt-5 vj-destacados">
+            <div class="row">
+                <div class=" col-md-12 mb-4">
+                    <a th:href="@{/musica/crear}" class="btn btn-outline-danger">Crear Canción</a>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div th:each="music : ${musicas}" class="col-md-3 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img th:src="${music.imagenUrl}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 th:text="${music.nombre}" class="card-title"></h5>
+                            <p th:text="${music.autor}" class="card-textA"></p>
+                            <p th:text="${music.descripcion}" class="card-text"></p>
+                            <div class="card-footer">
+                                <a th:href="${music.video}" class="btn btn-primary">Ver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+            
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    </body>
+</html>
